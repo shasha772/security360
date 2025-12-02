@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Complex Text Encryption</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Complex Text Encryption</h1>
+
+    <label for="inputText">Enter text:</label>
+    <textarea id="inputText" rows="4" placeholder="Type your text here..."></textarea>
+
+    <div class="buttons">
+      <button class="encrypt-btn" onclick="encryptText()">Encrypt</button>
+      <button class="decrypt-btn" onclick="decryptText()">Decrypt</button>
+      <button class="explain-btn" onclick="explain()">Explain</button>
+    </div>
+
+    <label for="outputText">Result:</label>
+    <textarea id="outputText" rows="4" readonly placeholder="Encrypted / Decrypted text will appear here..."></textarea>
+
+    <h3>Character Mapping</h3>
+    <table id="explainTable">
+      <thead>
+        <tr>
+          <th>Original</th>
+          <th>Encrypted</th>
+        </tr>
+      </thead>
+      <tbody id="explainTableBody">
+        <!-- rows added by JS -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
